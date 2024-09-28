@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    environment:
+      - DB_URL=mongodb+srv://admin:admin2024@eventmanager.nha5m.mongodb.net/?retryWrites=true&w=majority&appName=eventmanager
+      - DB_NAME=Events
+    depends_on:
+      - mongo
+    command: sh -c "uvicorn main:app --reload --port=8000 --host=0.0.0.0"
+    ports:
+      - 8000:8000
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
