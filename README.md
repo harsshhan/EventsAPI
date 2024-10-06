@@ -4,6 +4,7 @@ An event management API built with [FastAPI](https://fastapi.tiangolo.com) 🔥 
 I chose FastAPI for building EventsAPI primarily because of its speed and performance. FastAPI is one of the fastest web frameworks available, as it’s built on standard Python type hints, leveraging asyncio for high-performance asynchronous code execution.
 
 > Made for SRMKZILLA club submission
+## Check out the another task [ENV MANAGER](https://github.com/harsshhan/Env-Manager)
 
 ## Tech Stack
 
